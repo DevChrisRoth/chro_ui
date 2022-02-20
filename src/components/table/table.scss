@@ -1,0 +1,36 @@
+.table {
+    font-family: inherit;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #DFE1E6;
+  }
+  .table td {
+    padding: 12px 8px 12px 8px;
+    color: inherit;
+    border-radius: 3px;
+    border-bottom:  1px solid #DFE1E6;
+    cursor: unset;
+    text-align: left;
+  }
+  
+  .table tr:nth-child(even) {
+    //background: rgba(214, 221, 225, 0.25);
+    border-radius: 3px;
+  }
+  
+  .table tr:hover {
+    background: #f8f9fa;
+  }
+  
+  .table th {
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    font-size: 18px;
+    border-radius: 3px;
+    background-color: #fdfdfd;
+    border-bottom: 2px solid #DFE1E6;
+    color: hsla(216, 100%, 50%, 1);
+  }

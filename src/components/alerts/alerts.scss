@@ -1,0 +1,28 @@
+.alert{
+    width: calc(100% - 2rem - 2px);
+    height: auto;
+    padding: 0.75rem 1rem;
+    font-family: inherit;
+    border-radius: 3px;
+    text-align: left;
+    &.warning{
+        color: hsl(27, 98%, 30%);
+        background-color: hsl(33, 100%, 60%);
+        border: 1px solid hsl(27, 98%, 55%);
+    }
+    &.error{
+        color: #721c24;
+        background-color: #f8d7da;
+        border: 1px solid #f5c6cb;   
+    }
+    &.success{
+        color: #155724;
+        background-color: #d4edda;
+        border: 1px solid #c3e6cb;
+    }
+    &.primary{
+        color: #0052CC;
+        background-color: #cce5ff;
+        border:1px solid #b8daff;    
+    }
+}

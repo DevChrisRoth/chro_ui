@@ -1,0 +1,25 @@
+.input{
+    width: calc(100% - 12px - 4px);
+    background: transparent;
+    transition: all 0.3s ease;
+    border: 2px solid #dfe1e6;
+    border-radius: 3.01px;
+    padding: 8px 6px;
+    font-size: 16px;
+    font-family: inherit, 'Nunito';
+    color: hsla(219, 32%, 28%, 1);
+    &:focus{
+        outline: none;
+        background: #fff;
+        border: 2px solid #0066ff;
+    }
+    &:disabled{
+        outline: none;
+        cursor: not-allowed;
+        background: #efefef;
+        border: 1px solid #DFE1E5;
+        box-sizing: border-box;
+        border-radius: 3px;
+        min-height: 30px;
+    }  
+}

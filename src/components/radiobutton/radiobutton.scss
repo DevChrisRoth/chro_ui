@@ -1,0 +1,56 @@
+.r {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .r input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .rcheckmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    border:1px solid #0064FE;
+    border-radius: 50% !important;
+  }
+  
+  .r:hover input ~ .rcheckmark {
+    background-color: hsla(216, 100%, 50%, 0.05);
+  }
+  
+  .r input:checked ~ .rcheckmark {
+    background-color: hsla(216, 100%, 50%, 1);;
+  }
+  
+  .rcheckmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .r input:checked ~ .rcheckmark:after {
+    display: block;
+  }
+  
+  .r .rcheckmark:after {
+    top: 3px;
+      left: 3px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: white;
+  }
